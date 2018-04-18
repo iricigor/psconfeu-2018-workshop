@@ -13,7 +13,7 @@ Just list of names
 ## SYNTAX
 
 ```
-Get-Name [-Long] [<CommonParameters>]
+Get-Name [-Long] [-FooBar] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,7 +22,7 @@ Get-Name [-Long] [<CommonParameters>]
 ## EXAMPLES
 
 ### Example 1
-```powershell
+```
 PS C:\> {{ Add example code here }}
 ```
 
@@ -32,6 +32,21 @@ PS C:\> {{ Add example code here }}
 
 ### -Long
 {{Fill Long Description}}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FooBar
+{{Fill FooBar Description}}
 
 ```yaml
 Type: SwitchParameter
@@ -52,7 +67,6 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### None
-
 
 ## OUTPUTS
 
