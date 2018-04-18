@@ -19,7 +19,8 @@ function New-Greeting() {
 function Get-Name () {
     [CmdletBinding()]
     param(
-      [switch]$Long
+      [switch]$Long,
+      [switch]$FooBar
     )
 
     process {
