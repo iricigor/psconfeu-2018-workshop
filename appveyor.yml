@@ -8,7 +8,7 @@ install:
 build_script:
     - ps: |
         # TODO: create external help in en-US folder
-        New-ExternalHelp -Path .\en-US\
+        New-ExternalHelp -OutputPath en-US -Path ./docs
 
 test_script:
     - ps: |
