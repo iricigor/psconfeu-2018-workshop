@@ -3,10 +3,31 @@ function New-Greeting() {
     param(
         [Parameter(Mandatory=$true, 
             ValueFromPipeline=$true)]
-        [string]$Name
+        [string]$Name,
+
+        [string]$Greeting = 'Hello',
+
+        [string]$FooBar
     )
 
     process {
-        "Hello " + $Name
+        "$Greeting $Name"
+    }
+}
+
+
+function Get-Name () {
+    [CmdletBinding()]
+    param(
+      [switch]$Long
+    )
+
+    process {
+        if ($Long) {
+            'a'..'z'
+        } else {
+            @('Igor','Sergey')
+        }
+        
     }
 }
